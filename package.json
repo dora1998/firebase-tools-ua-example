@@ -1,0 +1,26 @@
+{
+  "name": "firebase-tools-ua-example",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "serve": "yarn run build && firebase emulators:start",
+    "shell": "yarn run build && firebase functions:shell",
+    "start": "yarn run shell",
+    "logs": "firebase functions:log",
+    "lint": "eslint --ext .js,.ts './src/'",
+    "lint:fix": "eslint --fix --ext .js,.ts './src/'"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "main": "build/index.js",
+  "dependencies": {
+    "firebase-admin": "^8.10.0",
+    "firebase-functions": "^3.6.1"
+  },
+  "devDependencies": {
+    "firebase-tools": "^9.1.0",
+    "typescript": "^3.8.0"
+  }
+}

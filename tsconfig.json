@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "baseUrl": "src",
+    "outDir": "build",
+    "target": "es2017"
+  },
+  "exclude": ["node_modules", "public", "build"]
+}
